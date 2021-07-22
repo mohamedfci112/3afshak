@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>3fshak</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./assets/logo_icon_fLz_2.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="./assets/css/slick.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/prata/v13/6xKhdSpbNNCT-sWCCm7bLnwIcOM.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/prata/v13/6xKhdSpbNNCT-sWLCm7bLnwIcOM.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/prata/v13/6xKhdSpbNNCT-sWACm7bLnwIcOM.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Prata';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/prata/v13/6xKhdSpbNNCT-sWPCm7bLnwI.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtXA_3-uE0qEE5Do.woff) format('woff');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXt7A_3-uE0qEE5Do.woff) format('woff');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXt_A_3-uE0qEE5Do.woff) format('woff');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Playfair Display';font-style:italic;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/playfairdisplay/v22/nuFRD-vYSZviVYUb_rj3ij__anPXDTnCjmHKM4nYO7KN_qiTXtHA_3-uE0qEEw.woff) format('woff');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zo-mM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoamM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zo2mM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoymM4MwWJXNqA.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Lobster';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/lobster/v23/neILzCirqoswsqX9zoKmM4MwWJU.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Abril Fatface';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-lmjcDidBeT5g.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Abril Fatface';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/abrilfatface/v12/zOL64pLDlL1D99S8g8PtiKchq-dmjcDidBc.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Crimson Text';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/crimsontext/v11/wlppgwHKFkZgtmSR3NB0oRJXsCxGDNNQ9rJPfw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Cairo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/cairo/v10/SLXGc1nY6HkvalIkTpumxdt0UX8.woff2) format('woff2');unicode-range:U+0600-06FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE80-FEFC;}@font-face{font-family:'Cairo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/cairo/v10/SLXGc1nY6HkvalIvTpumxdt0UX8.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Cairo';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/cairo/v10/SLXGc1nY6HkvalIhTpumxdt0.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <style type="text/css">@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFoWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFMWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFsWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+1F00-1FFF;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFQWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+0370-03FF;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFgWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFkWaDq8fMVxMw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}@font-face{font-family:'Noto Serif';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notoserif/v9/ga6Iaw1J5X9T9RW6j9bNfFcWaDq8fMU.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}</style>
+  <style>
+    .codepad-logo,
+.codepad-logo::before,
+.codepad-logo::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.codepad-logo {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  color: #3498db;
+  border-radius: 6px;
+  box-shadow: inset 0 0 0 1px #3498db;
+  transform: rotate(45deg);
+}
+
+.logo {
+    background: url("https://dl.dropboxusercontent.com/s/r0n3iyiuhub6j1t/test-fill-01.svg?dl=0") no-repeat 50%/70%;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-35deg);
+}
+
+.codepad-logo::before,
+.codepad-logo::after {
+  content: '';
+  z-index: -1;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px;
+  border-radius: 6px;
+  animation: clipIt 8s linear infinite;
+}
+.codepad-logo::before {
+  animation-delay: -4s;
+}
+
+@keyframes clipIt {
+  0%, 100% { clip: rect(0px, 220px, 2px, 0px); }
+  25%      { clip: rect(0px, 2px, 220px, 0px); }
+  50%      { clip: rect(218px, 220px, 220px, 0px); }
+  75%      { clip: rect(0px, 220px, 220px, 218px); }
+}
+
+  </style>
+<link rel="stylesheet" href="styles.2303d31f6a032a98dea8.css"></head>
+<body>
+  <app-root>
+    <div class="codepad-logo">
+      <div class="logo"></div>
+  </div>
+  </app-root>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="./assets/js/slick-animation.min.js"></script>
+  <script type="text/javascript" src="./assets/js/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+    AOS.init();
+});
+  </script>
+  <script>
+    $(document).ready(function(){
+
+// Init slick slider + animation
+$('.slider').slick({
+  autoplay: true,
+  speed: 4000,
+  lazyLoad: 'progressive',
+  arrows: true,
+  dots: false,
+	prevArrow: '<div class="slick-nav prev-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+	nextArrow: '<div class="slick-nav next-arrow"><i></i><svg><use xlink:href="#circle"></svg></div>',
+}).slickAnimation();
+
+$('.slick-nav').on('click touch', function(e) {
+
+    e.preventDefault();
+
+    var arrow = $(this);
+
+    if(!arrow.hasClass('animate')) {
+        arrow.addClass('animate');
+        setTimeout(() => {
+            arrow.removeClass('animate');
+        }, 30000);
+    }
+
+});
+
+$('.offercard').slick({
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2100,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+});
+  </script>
+  <script>
+    window.onload = function(){
+      var btn_li = document.getElementsByClassName('btn_li');
+    var banner = document.getElementById('banner');
+
+    btn_li[0].onclick = function(){
+      banner.src = "https://thesourcehk.com/cms/wp-content/uploads/showrooms/b&b2/THE_SOURCE_must_go_showroom_B&B%20Italia_05_full.jpg";
+      animat();
+      this.classList.add("active");
+    }
+    btn_li[1].onclick = function(){
+      banner.src = "../../../assets/img/Furniture-Background-Image.jpg";
+      animat();
+      this.classList.add("active");
+    }
+    btn_li[2].onclick = function(){
+      banner.src = "https://pbs.twimg.com/media/DtKoY89WwAA-i2H.jpg";
+      animat();
+      this.classList.add("active");
+    }
+
+    function animat(){
+      banner.classList.add("zoom");
+      setTimeout(function(){
+        banner.classList.remove("zoom");
+      },500);
+      for(b of btn_li){
+        b.classList.remove("active");
+      }
+    }
+
+    /**/
+    var text1 = document.getElementById('text');
+    var banner1 = document.getElementById('banner1');
+
+    var text = ["Secure Payment", "Delivery & Assembly Service","3afshak Rating","No Strangers","Curated & Unique Pieces"];
+    var src =
+    [
+      "https://images.squarespace-cdn.com/content/v1/5e8bf8ea324a1b5013136b1e/1589510155285-FLHR0L1CQ41XX3WVVYN8/ke17ZwdGBToddI8pDm48kN9YjiUrwu32mlVhJ-GwyQt7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UR1Q8rwileIlKqC9YMBuPLO_DasTRzP_fAfbVJVt7-eQNKEu28rD9AFzTNbT_UZh4Q/Stocksy_txp03330614fHi200_Medium_3011818.jpg",
+      "https://amdiscountfurniture.com/wp-content/uploads/2020/08/Delivery-Man-2.png",
+      "https://www.furnitureacademy.com/wp-content/uploads/2018/12/Furniture-Brands-Youll-Love.jpg",
+      "https://cdn.indesignlive.com/wp-content/uploads/SWEDESE-LimeContinental_0-Landon-Brown-1024x657.jpg",
+      "https://images.squarespace-cdn.com/content/v1/56aae789a2bab842081a5c03/1540354052534-8W3BHEIGSK9AC621HDE6/ke17ZwdGBToddI8pDm48kG87Sfbgg29A4BYEDq3OXvgUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcf4OxbJOyh_wHUnyc4kQLQ6SBshRGOku7c30Y_IRDNPta8R2IY5BHMaEj1zOWoDTZ/Day+2-1.jpg"];
+    var counter = 0;
+    var inst = setInterval(change, 5000);
+
+    function change() {
+      text1.innerHTML = text[counter];
+      banner1.src = src[counter];
+      banner1.classList.add("zoom");
+        setTimeout(function(){
+          banner1.classList.remove("zoom");
+        },500);
+    counter++;
+    if (counter >= text.length) {
+      counter = 0;
+      // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+    }
+}
+
+    }
+
+  </script>
+
+<script src="runtime.0e49e2b53282f40c8925.js" defer=""></script><script src="polyfills.8c151b8375e767ff858f.js" defer=""></script><script src="main.25ff319eed574a25c507.js" defer=""></script></body>
+</html>
